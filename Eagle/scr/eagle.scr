@@ -1,0 +1,83 @@
+# Configuration Script
+#
+# This file can be used to configure the editor windows.
+
+Assign F3 'Delete';
+Assign F4 'Name';
+Assign F5 'Value';
+Assign F6 'Smash';
+Assign F7 'Move';
+Assign AF7 'Group';
+Assign F8 'Copy';
+Assign F10 'Grid mil 25 line 2 on dots; Grid alt mil 5;';
+Assign AF10 'Grid mm .25 lines 2 on dots; Grid alt mm 0.05;';
+
+Grid mil 25 line 2 on dots;
+Grid alt mil 5;
+
+BRD:
+
+#Menu Add Change Copy Delete Display Grid Group Move Name Quit Rect \
+#     Route Script Show Signal Split Text Value Via Window ';'  Wire Write Edit;
+
+#Get rid of the extra internal layers
+#Layer -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15
+
+Assign F8 'Ratsnest';
+Assign F9 'Route';
+Assign AF9 'Ripup';
+
+Assign F11 'display none; display 1 16 17 18 19 20 21 22 23 24 45 51 52; display -25 -26 -27 -28;';
+Assign AF11 'display none; display 17 20 21 23 27 31 45 51 52; display -25 -26 -28;';
+
+Assign F12 'Show';
+
+Change Shape Round;
+Change Drill 14 mil;
+
+
+SCH:
+Assign F9 'Net';
+Assign AF9 'Label';
+Grid Default;
+Change Width 0.008;
+Change Size 0.05;
+
+#Menu Add Bus Change Copy Delete Display Gateswap Grid Group Invoke Junction \
+#     Label Move Name Net Pinswap Quit Script Show Split Value Window ';' \
+#     Wire Write Edit;
+
+LBR:
+
+#Menu Close Export Open Script Write ';' Edit;
+
+Assign F10 'Grid inch 0.05 on; Grid alt inch 0.005;';
+Assign AF10 'Grid mm 1 on; Grid alt mm 0.1;';
+Grid mm 1 on;
+Grid alt mm 0.1;
+
+DEV:
+
+Grid Default;
+#Menu Add Change Copy Connect Delete Display Export Grid Move Name Package \
+#     Prefix Quit Script Show Value Window ';' Write Edit;
+
+PAC:
+
+Grid mm .25 2 on dots;
+Grid alt mm 0.05;
+Change Width 0.005;
+Change Size 0.050;
+#Menu Add Change Copy Delete Display Grid Group Move Name Pad Quit \
+#     Script Show Smd Split Text Window ';' Wire Write Edit;
+
+
+SYM:
+
+Grid mil 25 4 on lines;
+Change Width 0.010;
+Change Visible Pin;
+Change Length Point;
+Change Size 50 mil;
+#Menu Arc Change Copy Cut Delete Display Export Grid Group Move Name Paste \
+#     Pin Quit Script Show Split Text Value Window ';' Wire Write Edit;
