@@ -11,3 +11,5 @@ cd ~/Projects/.config/
 
 # Awesome WM
 ln -s {`pwd`,~/.config}/awesome
+
+# udev rules

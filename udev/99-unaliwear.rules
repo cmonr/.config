@@ -1,0 +1,7 @@
+# MAXQ Devices
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A601SQMZ", SYMLINK+="ttyMAXQ-EVAL0"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A601SPLJ", SYMLINK+="ttyMAXQ-EVAL1"
+
+# MAXQ Debuggers
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0b6a", ATTRS{idProduct}=="5a00", ATTRS{serial}=="2410657698", SYMLINK+="ttyMAXQ-JTAG0"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0b6a", ATTRS{idProduct}=="5a00", ATTRS{serial}=="4015987457", SYMLINK+="ttyMAXQ-JTAG1"

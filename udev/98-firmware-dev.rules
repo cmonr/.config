@@ -1,0 +1,3 @@
+# MBed (FRDM-K64F)
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0d28", ATTRS{idProduct}=="0204", ATTRS{serial}=="4015987457", SYMLINK+="ttyMBED-K64F"
+
