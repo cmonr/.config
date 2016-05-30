@@ -1,0 +1,8 @@
+
+
+# Tip: Use `blkid /dev/sd* | awk '{print $3}'` for the UUID
+# The USB Drive
+UUID="A462-952B" /media/TheUSBDrive vfat defaults,rw,auto,users,umask=0000,flush
+
+# MBed (FRDM-K64F)
+UUID="A462-952B" /media/MBed-FRDM-K64F vfat defaults,rw,auto,users,flush
